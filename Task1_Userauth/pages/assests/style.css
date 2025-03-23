@@ -1,0 +1,97 @@
+/* Dashboard Background */
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Glassmorphism Card */
+.dashboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    color: white;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.dashboard-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-btn, .logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Logout Button */
+/* Smaller Logout Button */
+.logout-btn {
+    background: red;
+    font-size: 16px; /* Reduced font size */
+    padding: 8px 12px; /* Smaller padding */
+    width: auto; /* Adjust width */
+    display: inline-block; /* Make it smaller */
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
